@@ -1,7 +1,7 @@
 import gameReducer from '../reducers/index';
 
-test('starts with 16 cards in the deck', () => {
-  expect( gameReducer(undefined, {}).toJS().deck.length ).toBe(16);
+test('starts with 10 cards in the deck', () => {
+  expect( gameReducer(undefined, {}).toJS().deck.length ).toBe(11);
 });
 
 test('starts with 1 hidden card', () => {
@@ -17,9 +17,9 @@ test('starts with 2 players', () => {
 });
 
 test('player starts with a card in their hand', () => {
-  expect( gameReducer(undefined, {}).toJS().players.hand.length ).toBe(1);
+  expect( gameReducer(undefined, {}).toJS().players[0].hand.length ).toBe(1);
 });
 
 test('player starts empty discard', () => {
-  expect( gameReducer(undefined, {}).toJS().players.hand.length ).toBe(0);
+  expect( gameReducer(undefined, {}).toJS().players[0].discard.length ).toBe(0);
 });
