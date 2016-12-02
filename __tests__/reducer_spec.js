@@ -20,6 +20,6 @@ test('player starts with a card in their hand', () => {
   expect( gameReducer(undefined, {}).toJS().players[0].hand.length ).toBe(1);
 });
 
-test('player starts empty discard', () => {
+test('player starts empty with discard', () => {
   expect( gameReducer(undefined, {}).toJS().players[0].discard.length ).toBe(0);
 });
