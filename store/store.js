@@ -16,7 +16,7 @@ export function createStore( reducer ){
     listeners.push( listener )
   }
 
-  dispatch({})//call dispatch with empty action
+  dispatch({})//setup the inital state
 
   return {getState, dispatch, subscribe}
 }
