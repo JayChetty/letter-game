@@ -8,10 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "immutable": "^3.8.1",
-    "redux": "^3.6.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-jest": "^17.0.2",
     "babel-polyfill": "^6.16.0",
